@@ -13,7 +13,6 @@
             overflow: hidden;
             background-color: #000000;
             user-select: none;
-            -webkit-user-select: none;
         }
         #game-frame {
             width: 100%;
@@ -36,7 +35,6 @@
         window.addEventListener('DOMContentLoaded', () => {
             const frame = document.getElementById('game-frame');
             frame.focus();
-            
             document.body.addEventListener('click', () => {
                 frame.focus();
             });
